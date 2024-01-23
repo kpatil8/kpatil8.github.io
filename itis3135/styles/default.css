@@ -39,11 +39,15 @@ img{
     width: 50%;
 }
 
-table, th, td {
+table, td,th {
     border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .complex tr:nth-child(even) {
     background-color: #777;
     color: #fff; 
 }
+
