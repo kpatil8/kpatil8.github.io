@@ -51,3 +51,71 @@ table, td,th {
     color: #fff; 
 }
 
+input{
+    display:inline-block;
+    background:rgb(114,137,218);
+    padding:5px;
+    border-color:rgb(30,33,36);
+    border-width:3px;
+  }
+  
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 9px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    border-bottom: 10px;
+  }
+  
+  input::placeholder{
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .form-box{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;    
+  }
+
+  input[type="radio"]{
+    margin-top:-1px;
+    vertical-align: middle;
+    display:inline-block;
+    margin-inline-end: auto;
+    margin-right:5px;
+    
+  }
+
+  label{
+    float:left;
+    clear:none;
+    display:flex;
+    padding:0px 1em 0px 0px
+  }
+
+  input[type="submit"]{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color:rgba(53, 29, 29, 0.589);
+    color: rgb(114,137,218);
+  }
+
+  input[type="reset"]{
+    margin-bottom: 30px;
+    width: 30%;
+    font-size:12px;
+    background-color:rgba(53, 29, 29, 0.589);
+    color: rgb(114,137,218);
+  }
+
+
+  
