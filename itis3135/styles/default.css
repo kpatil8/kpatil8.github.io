@@ -110,6 +110,7 @@ input{
     font-size:12px;
     background-color:rgba(53, 29, 29, 0.589);
     color: rgb(114,137,218);
+    display: inline;
   }
 
 
