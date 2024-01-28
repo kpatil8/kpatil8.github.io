@@ -33,6 +33,7 @@ li{
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
+    
 }
 
 img{
@@ -52,19 +53,13 @@ table, td,th {
 }
 
 input{
-    display:inline-block;
+    display:block;
     background:rgb(114,137,218);
     padding:5px;
     border-color:rgb(30,33,36);
     border-width:3px;
   }
   
-  
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
   
   input,
   textarea,
@@ -73,6 +68,7 @@ input{
     width: 100%;
     min-height: 2em;
     border-bottom: 10px;
+    
   }
   
   input::placeholder{
@@ -86,19 +82,18 @@ input{
   }
 
   input[type="radio"]{
-    margin-top:-1px;
-    vertical-align: middle;
-    display:inline-block;
-    margin-inline-end: auto;
-    margin-right:5px;
-    
+    display: block;
+    margin: auto;
+
   }
 
   label{
     float:left;
     clear:none;
-    display:flex;
-    padding:0px 1em 0px 0px
+    display:inline-flex;
+    padding:0px 1em 0px 0px;
+    align-items: center;
+    
   }
 
   input[type="submit"]{
@@ -116,6 +111,9 @@ input{
     background-color:rgba(53, 29, 29, 0.589);
     color: rgb(114,137,218);
   }
+
+
+  
 
 
   
