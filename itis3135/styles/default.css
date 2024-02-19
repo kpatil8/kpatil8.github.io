@@ -139,7 +139,7 @@ input{
 
   @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     img{
-        width: 90%;
+        width:110%;
     }
     ul{
         margin-left: 10%;
@@ -147,6 +147,7 @@ input{
     html, body{
         font-size: 12pt;
     }
+    
   }
 
 
