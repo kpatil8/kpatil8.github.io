@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Patil's Keen Panther || ITIS 3135 Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>First Scripts</h2>
+        <h3>Enter Your Favorite Number (0 to 10):</h3>
+            <input type="text" id="favorite_number">
+            <button onclick="find_polygon()">Find Polygon Name</button>
+        
+        <script>
+            function find_polygon(){
+                let user_input = document.getElementById("favorite_number").value;
+                let number = Math.abs(Math.round(user_input))
+                if (number >= 0 && number <=10){
+                    const polygons=[
+                    "Too few sides to be a Polygon",
+                    "Too few sides to be a polygon",
+                    "Line segment",
+                    "Triangle",
+                    "Quadrilateral",
+                    "Pentagon",
+                    "Hexagon",
+                    "Heptagon",
+                    "Octagon",
+                    "Nonagon",
+                    "Decagon"
+                    ];
+                    let polygon_name = polygons[number]
+                    console.log("The polygon with " + number + "sides is called a " + polygon_name);
+                } else{
+                    console.log("Please enter a number between 0 and 10");
+                }
+            }
+        </script> 
+        
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
