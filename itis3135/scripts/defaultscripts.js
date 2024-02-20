@@ -1,3 +1,3 @@
 function test_script(){
-    alert("this script is working.")
+    alert("this script is working.");
 }
