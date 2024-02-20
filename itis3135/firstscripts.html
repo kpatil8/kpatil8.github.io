@@ -19,7 +19,7 @@
         <script>
             function find_polygon(){
                 let user_input = document.getElementById("favorite_number").value;
-                let number = Math.abs(Math.round(user_input))
+                let number = Math.abs(Math.round(parseFloat(user_input)));
                 if (number >= 0 && number <=10){
                     const polygons=[
                     "Too few sides to be a Polygon",
@@ -35,9 +35,9 @@
                     "Decagon"
                     ];
                     let polygon_name = polygons[number]
-                    console.log("The polygon with " + number + "sides is called a " + polygon_name);
+                    alert("The polygon with " + number + "sides is called a " + polygon_name);
                 } else{
-                    console.log("Please enter a number between 0 and 10");
+                    alert("Please enter a number between 0 and 10");
                 }
             }
         </script> 
