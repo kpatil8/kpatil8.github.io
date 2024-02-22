@@ -59,3 +59,7 @@ function display_date(){
     let date = current_day.toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'});
     document.getElementById("display_date").textContent = "It is " + time + " on " + weekday + ", " + date;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    display_date();
+});
