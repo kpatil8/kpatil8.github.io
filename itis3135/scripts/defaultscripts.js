@@ -8,8 +8,8 @@ function find_polygon(){
     if (number >= 0 && number <=10){
         const polygons=[
         "Too few sides to be a Polygon",
-        "Too few sides to be a polygon",
-        "Line segment",
+        "Monogon",
+        "Digon",
         "Triangle",
         "Quadrilateral",
         "Pentagon",
@@ -27,7 +27,7 @@ function find_polygon(){
 }
 
 function display_name(){
-    let x = document.getElementById("name");
-    let y = document.getElementById("emotion");
-    document.getElementById("display_nameemotion").innerHTML= "Hello" + x + "! You're feeling " + y + ".";
+    let x = document.getElementById("name").value;
+    let y = document.getElementById("emotion").value;
+    document.getElementById("display_nameemotion").innerHTML= "Hello " + x + "! You're feeling " + y + ".";
 }
