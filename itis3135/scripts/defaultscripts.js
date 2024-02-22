@@ -18,7 +18,7 @@ function find_polygon(){
         let polygon_name = polygons[number]
         alert("The polygon with " + number + " sides is called a " + polygon_name);
     } else{
-        alert("Please enter a number between 0 and 10");
+        alert("Please enter a number between 1 and 10");
     }
 }
 
