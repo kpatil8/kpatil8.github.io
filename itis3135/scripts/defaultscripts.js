@@ -2,9 +2,8 @@
 function find_polygon(){
     let user_input = document.getElementById("favorite_number").value;
     let number = Math.abs(Math.round(parseFloat(user_input)));
-    if (number >= 0 && number <=10){
+    if (number > 0 && number <=10){
         const polygons=[
-        "Too few sides to be a Polygon",
         "Monogon",
         "Digon",
         "Triangle",
