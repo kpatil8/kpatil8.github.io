@@ -37,3 +37,20 @@ function find_speed(){
     let random_speed = speeds[Math.floor(Math.random() * speeds.length)];
     alert("Your panther runs at " + random_speed + "!");
 }
+
+function track_steps(){
+    let step_count = ["10000", "20000", "30000", "40000", "100000", "200000"]
+    let random_steps = step_count[Math.floor(Math.random() * step_count.length)];
+    alert("Your panther has gotten " + random_steps + " today!");
+}
+
+function server_status(){
+    let status_list = ["Online", "Offline", "Under Maintinence", "Under Heavy Load", "Experiencing Intermittent Connection", "Experiencing Packet Loss!"]
+    let random_status = status_list[Math.floor(Math.random() * status_list.length)];
+    alert("The Intellipanther Servers are currently " + random_status);
+}
+
+function calculate_cost(){
+    let space = document.getElementById("storage_space").value;
+    alert("The cost of your personal server with " + space + " terabytes of storage will cost $" + space * 150 + 1000);
+}
