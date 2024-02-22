@@ -55,7 +55,7 @@ function calculate_cost(){
 function display_date(){
     let current_day = new Date();
     let weekday = current_day.toLocaleDateString('en-US', {weekday: 'long'});
-    let time = current_day.toLocaleDateString('en-US', {hour: 'numeric', minute: "numeric", hour12: true });
+    let time = current_day.toLocaleTimeString('en-US', {hour: 'numeric', minute: "numeric", hour12: true });
     let date = current_day.toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'});
     document.getElementById("display_date").textContent = "It is " + time + " on " + weekday + ", " + date;
 }
