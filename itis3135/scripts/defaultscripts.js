@@ -49,7 +49,7 @@ function server_status(){
 
 function calculate_cost(){
     let space = document.getElementById("storage_space").value;
-    alert("The cost of your personal server with " + space + " terabytes of storage will cost $" + space * 150 + 1000);
+    alert("The cost of your personal server with " + space + " terabytes of storage will cost $" + (space * 150 + 1000));
 }
 
 function display_date(){
