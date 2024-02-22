@@ -25,3 +25,9 @@ function find_polygon(){
         alert("Please enter a number between 0 and 10");
     }
 }
+
+function display_name(){
+    let x = document.getElementById("name");
+    let y = document.getElementById("emotion");
+    document.getElementById("display_nameemotion").innerHTML= "Hello" + x + "! You're feeling " + y + ".";
+}
