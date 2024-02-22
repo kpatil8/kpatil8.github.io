@@ -113,6 +113,11 @@ input{
     display: inline;
   }
 
+  button{
+    background-color:rgba(53, 29, 29, 0.589);
+    color: rgb(114,137,218);
+  }
+
   p{
     text-align:left;
   }

@@ -31,3 +31,9 @@ function display_name(){
     let y = document.getElementById("emotion").value;
     document.getElementById("display_nameemotion").innerHTML= "Hello " + x + "! You're feeling " + y + ".";
 }
+
+function find_speed(){
+    let speeds = ["50 mph", "60mph", "80mph", "100mph", "9000mph, WOW"];
+    let random_speed = speeds[Math.floor(Math.random() * speeds.length)];
+    alert("Your panther runs at " + random_speed + "!");
+}
