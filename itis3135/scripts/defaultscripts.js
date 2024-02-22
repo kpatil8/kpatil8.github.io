@@ -1,6 +1,3 @@
-function test_script(){
-    alert("this script is working.");
-}
 
 function find_polygon(){
     let user_input = document.getElementById("favorite_number").value;
@@ -41,7 +38,7 @@ function find_speed(){
 function track_steps(){
     let step_count = ["10000", "20000", "30000", "40000", "100000", "200000"]
     let random_steps = step_count[Math.floor(Math.random() * step_count.length)];
-    alert("Your panther has gotten " + random_steps + " today!");
+    alert("Your panther has gotten " + random_steps + " steps today!");
 }
 
 function server_status(){
@@ -53,4 +50,12 @@ function server_status(){
 function calculate_cost(){
     let space = document.getElementById("storage_space").value;
     alert("The cost of your personal server with " + space + " terabytes of storage will cost $" + space * 150 + 1000);
+}
+
+function display_date(){
+    let current_day = new Date();
+    let weekday = current_day.toLocaleDateString('en-US', {weekday: 'long'});
+    let time = current_day.toLocaleDateString('en-US', {hour: 'numeric', minute: "numeric", hour12: true });
+    let date = current_day.toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'});
+    document.getElementById("display_date").textContent = "It is " + time + " on " + weekday + ", " + date;
 }
