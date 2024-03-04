@@ -16,7 +16,7 @@ function submit_form(){
     const final_form= document.getElementById("result_form");
     final_form.innerHTML= `
     <h2>Introduction</h2>
-    <h3>"${name}"s ${mascot}</h3>
+    <h3>${name}'s "${mascot}"</h3>
     <figure>
         <img src="${image}" class="pfp" alt="${img_caption}">
         <figcaption>${img_caption}</figcaption>
@@ -39,4 +39,14 @@ function submit_form(){
     
     
     
+}
+
+function addCourse() {
+    const coursesDiv = document.getElementById("courses");
+    const newCourseDiv = document.createElement("div");
+    newCourseDiv.innerHTML = `
+        <label for="course">Course Being Taken:</label>
+        <input type="text" class="course" required>
+    `;
+    coursesDiv.appendChild(newCourseDiv);
 }
