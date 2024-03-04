@@ -56,4 +56,7 @@ function addCourse() {
     del_button.onclick = function() {
         coursesDiv.removeChild(newCourseDiv);
     };
+
+    coursesContainer.appendChild(newCourseDiv);
+    coursesContainer.appendChild(del_button);
 }
