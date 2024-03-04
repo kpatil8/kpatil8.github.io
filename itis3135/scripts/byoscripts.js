@@ -50,3 +50,4 @@ function addCourse() {
     `;
     coursesDiv.appendChild(newCourseDiv);
 }
+
