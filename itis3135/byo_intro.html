@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Patil's Keen Panther || ITIS 3135 Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Build Your Own Intro</h2>
+        <form id="intro_form" onsubmit="submit_form(); return false;">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" required>
+
+            <label for="image">Image <strong>(.img or .png only)</strong></label>
+            <input type="file" id="image" required>
+
+            <label for="img_caption">Image Caption:</label>
+            <input type="text" id="img_caption" required>
+
+            <label for="pers_background">Personal Background:</label>
+            <input type="text" id="pers_background" required>
+
+            <label for="prof_background">Professional Background:</label>
+            <input type="text" id="prof_background" required>
+
+            <label for="ac_background">Academic Background:</label>
+            <input type="text" id="ac_background" required>
+
+            <label for="web_background">Web Development Background:</label>
+            <input type="text" id="web_background" required>
+
+            <label for="computer">Computer Platform:</label>
+            <input type="text" id="computer" required>
+
+            <div><label for="fullName">Courses Being Taken:</label>
+                <input type="text" id="course" required>
+                <button type="button" onclick="addCourse()">Add Course</button>
+            </div>
+
+            <label for="funny">A Funny Thing About Yourself:</label>
+            <input type="text" id="funny">
+
+            <label for="extra">Anything Else?</label>
+            <input type="text" id="extra">
+
+            <div>
+                <p>I understand that what is on this page is not password protected,
+                    and I will not put anything here that I don’t want publicly available.</p>
+                    <input type="checkbox" id="agreement" required>
+            </div>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+            <div id="result_form">
+
+            </div>
+        
+            
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/byoscript.js"></script>
+</body>
+</html>
