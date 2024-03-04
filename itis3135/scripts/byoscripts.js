@@ -49,5 +49,11 @@ function addCourse() {
         <input type="text" class="course" required>
     `;
     coursesDiv.appendChild(newCourseDiv);
-}
 
+    const del_button = document.createElement("button");
+    del_button.type = "button";
+    del_button.textContent = "Delete";
+    del_button.onclick = function() {
+        coursesDiv.removeChild(newCourseDiv);
+    };
+}
