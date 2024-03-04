@@ -61,3 +61,4 @@ function addCourse() {
     coursesDiv.appendChild(del_button);
 }
 
+
