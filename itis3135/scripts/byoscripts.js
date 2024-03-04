@@ -48,15 +48,16 @@ function addCourse() {
         <label for="course">Course Being Taken:</label>
         <input type="text" class="course" required>
     `;
-    coursesDiv.appendChild(newCourseDiv);
 
     const del_button = document.createElement("button");
     del_button.type = "button";
     del_button.textContent = "Delete";
     del_button.onclick = function() {
         coursesDiv.removeChild(newCourseDiv);
+        coursesDiv.removeChild(del_button);
     };
 
-    coursesContainer.appendChild(newCourseDiv);
-    coursesContainer.appendChild(del_button);
+    coursesDiv.appendChild(newCourseDiv);
+    coursesDiv.appendChild(del_button);
 }
+
