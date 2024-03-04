@@ -28,7 +28,7 @@ function submit_form(){
             <li><b>Background in Subject: </b>${web_background}</li>
             <li><b>Primary Computer Platform: </b>${computer}</li>
             <li><b>Interest: </b>${anything}</li>
-            <li><b>Courses I'm Taking & Why: </b>
+            <li><b>Courses I'm Taking: </b>
                 <ul>
                     ${courses.map(course => `<li><b>${course}</b></li>`).join("")}
                 </ul>
