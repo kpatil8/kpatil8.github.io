@@ -1,0 +1,39 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+}
+
+main{
+    padding:10px;
+    background-color:#6a3e37 ;
+    color:#bcd4e3;
+}
+
+.header{
+    text-align: center;
+    background-color: #2e5266;
+    color:#C49799;
+    padding:10px;
+}
+
+.shadow{
+    text-shadow: 5px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    color:#C49799;
+}
