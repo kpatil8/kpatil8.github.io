@@ -155,8 +155,28 @@ input{
     
   }
 
+  .calculator {
+    width:50%
+  }
 
+input[type="button"] {
+    width: 60px;
+    height: 45px;
+    margin: 5px;
+    font-size: 18px;
+  }
 
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+  }
+
+.calctable{
+  border:none;
+  border-style:inset
+}
 
 
 
