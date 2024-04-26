@@ -67,13 +67,11 @@ nav ul li {
     height: 450px;
     cursor: pointer;
     border:#6a3e37;
-    border-radius: 5px;
-    
-    
+    border-radius: 5px;   
 }
 
 .image-border{
-    padding:5px;
+    padding:7px;
     width:400px;
     height:500px;
     background-color: #220c10;
@@ -94,6 +92,6 @@ nav ul li {
     box-shadow: 0 0 10px 5px #c49799;
 }
 
-.image-border img:hover{
-    transform: scale(1.05);
+.container .gallery .image-border:hover img{
+    transform: scale(1.015);
 }
