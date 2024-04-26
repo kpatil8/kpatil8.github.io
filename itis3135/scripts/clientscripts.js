@@ -4,6 +4,9 @@ function showImage(imageSrc) {
     
     modal.style.display = "block";
     modalImage.src = imageSrc;
+    modalImage.style.width = "80%"; // Set the width of the modal image to 80% of the viewport width
+    modalImage.style.height = "80%"; // Set the height of the modal image to 80% of the viewport height
+    modalImage.style.margin = "auto"; // Center the modal image horizontally
 }
 
 function closeModal() {
