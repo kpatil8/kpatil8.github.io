@@ -58,6 +58,11 @@ nav ul li {
     left: 20px;
     width: 100px;
     border-radius: 10px;
+    transition:transform 0.3s ease-in-out;
+}
+
+.headerlogo:hover{
+    transform: scale(1.05);
 }
 
 .gallery {
