@@ -6,7 +6,6 @@
     <title>Sommia Studios || Gallery</title>
     <link rel="stylesheet" href="../styles/client.css">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
-    <script src="../scripts/clientscripts.js"></script>
 </head>
 <body>
     <header>
@@ -45,20 +44,7 @@
             <img src="../images/galleryimg1.png" alt="">
         </div>
 
-        <script>
-        document.querySelectorAll('.gallery img').forEach(image => {
-            image.onclick = () =>{
-                document.querySelector('.popup-image').style.display = 'block';
-                document.querySelector('.popup-image img').src= image.getAttribute('src');
-            }
-        });
-
-        document.querySelector('.popup-image span').onclick = () =>{
-            document.querySelector('.popup-image').style.display = 'none';
-        }
-
-        </script>
-
+        
         
     </div>
 
@@ -76,9 +62,10 @@
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-    
+        document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/clientscripts.js"></script>
 </body>
 </html>
