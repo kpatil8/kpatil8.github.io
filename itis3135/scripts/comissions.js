@@ -28,11 +28,11 @@ function updatePrice() {
 
     let price = commissionData[commissionType].price;
 
-    // Adjust price based on commission type and commission size
+    
     if (commissionSize === 'fullbody' && commissionType !== 'chibi') {
-        price *= 2; // Double the price for full body
+        price *= 2; 
     } else if (commissionSize === 'bust') {
-        price *= 0.5; // Half the price for half body
+        price *= 0.5; 
     }
 
     document.getElementById('price').textContent = `$${price}`;
@@ -45,5 +45,5 @@ document.addEventListener('DOMContentLoaded', function() {
         radio.addEventListener('change', updatePrice);
     });
 
-    updatePrice(); // Initialize the price and example image
+    updatePrice();
 });
