@@ -24,22 +24,26 @@ const commissionData = {
 
 function updatePrice() {
     const commissionType = document.getElementById('commission-type').value;
-    const isFullBody = document.getElementById('full-body-checkbox').checked;
+    const commissionSize = document.querySelector('input[name="commission-size"]:checked').value;
 
     let price = commissionData[commissionType].price;
-    if (isFullBody && commissionType !== 'chibi') {
-        price *= 2; 
+
+    // Adjust price based on commission type and commission size
+    if (commissionSize === 'fullbody' && commissionType !== 'chibi') {
+        price *= 2; // Double the price for full body
+    } else if (commissionSize === 'bust') {
+        price *= 0.5; // Half the price for half body
     }
 
     document.getElementById('price').textContent = `$${price}`;
     document.getElementById('example-image').src = commissionData[commissionType].image;
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('commission-type').addEventListener('change', updatePrice);
-    document.getElementById('full-body-checkbox').addEventListener('change', updatePrice);
+    document.querySelectorAll('input[name="commission-size"]').forEach(function(radio) {
+        radio.addEventListener('change', updatePrice);
+    });
 
-    
-    updatePrice();
+    updatePrice(); // Initialize the price and example image
 });

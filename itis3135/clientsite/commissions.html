@@ -30,8 +30,14 @@
                 <option value="chibi">Chibi</option>
                 <option value="fullrender">Fully Rendered</option>
             </select>
-            <label for="full-body-checkbox">Full Body:</label>
-            <input type="checkbox" id="full-body-checkbox">
+            <br>
+            <label for="commission-type">Select commission size:</label>
+            <div id="commission-size-options">
+                <label><input type="radio" name="commission-size" value="fullbody" checked>Full Body</label>
+                <label><input type="radio" name="commission-size" value="halfbody" checked>Half Body</label>
+                <label><input type="radio" name="commission-size" value="bust">Bust</label>
+            </div>
+            <br>
         </div>
         <div id="product">
             <span id="price-placeholder" class="comissionprice">Price:
