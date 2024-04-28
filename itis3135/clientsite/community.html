@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,42 @@
     <link rel="stylesheet" href="../styles/client.css">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
+
 <body>
     <header>
-    <div class="header">
-        <h1 class="header shadow">Somnia Studios</h1>
-        <a href="index.html"><img src="../images/SS_Icon.jpg" class="headerlogo"alt="headerlogo"></a>
-        <nav>
-            <ul class="header shadow">
-                <li><a href="gallery.html">Gallery</a></li> 
-                <li><a href="commissions.html">Commisions</a></li>
-                <li><a href="futureprojs.html">Future Projects</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html">Contact Me!</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div data-include="../components/clientheader.html"></div>
+    </header>
     <main>
         <h2>Our Community!</h2>
-        <p>Below you'll find  a link to my Discord server where you can communicate directly with me whether thats about more details regarding a comission, joining in on community movie nights, checking in on art or even being a beta reader for a new series!
+        <p>Below you'll find a link to my Discord server where you can communicate directly with me whether thats about
+            more details regarding a comission, joining in on community movie nights, checking in on art or even being a
+            beta reader for a new series!
         </p>
-        <iframe src="https://discord.com/widget?id=1174749876530204702&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <iframe src="https://discord.com/widget?id=1174749876530204702&theme=dark" width="350" height="500"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </main>
     <footer>
         <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
             <img style="border:0;width:88px;height:31px"
-            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img style="border:0;width:88px;height:31px;" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>
-            <a href="https://wave.webaim.org/report#/" id="validation_link_disability"> <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag-2.png" alt="Valid Disabiliy/Accessibility Design!">
-            </a>
+                src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px;" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
+        <a href="https://wave.webaim.org/report#/" id="validation_link_disability"> <img
+                style="border:0;width:88px;height:31px" src="../images/button_validation_wcag-2.png"
+                alt="Valid Disabiliy/Accessibility Design!">
+        </a>
     </footer>
     <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_disability").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
     <script src="../scripts/clientscripts.js"></script>
 </body>
+
 </html>

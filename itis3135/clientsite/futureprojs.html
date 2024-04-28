@@ -9,19 +9,7 @@
 </head>
 <body>
     <header>
-    <div class="header">
-        <h1 class="header shadow">Somnia Studios</h1>
-        <a href="index.html"><img src="../images/SS_Icon.jpg" class="headerlogo"alt="headerlogo"></a>
-        <nav>
-            <ul class="header shadow">
-                <li><a href="gallery.html">Gallery</a></li> 
-                <li><a href="commissions.html">Commisions</a></li>
-                <li><a href="futureprojs.html">Future Projects</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html">Contact Me!</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div data-include="../components/clientheader.html"></div>
 </header>
     <main>
         <h2>Future Projects</h2>
@@ -58,7 +46,7 @@
         document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
     <script src="../scripts/clientscripts.js"></script>
 </body>
 </html>

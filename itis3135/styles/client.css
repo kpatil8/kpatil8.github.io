@@ -134,7 +134,7 @@ nav ul li {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    border: 5px solid #220c10;
+    border: 5px solid #0F3247;
     border-radius: 5px;
     width:750px;
     object-fit: cover;
@@ -150,4 +150,24 @@ nav ul li {
     header{
         padding-top:40px;
     }
+}
+
+.commisionex{
+    width:400px;
+    border:5px solid #0F3247;
+    border-radius: 5px;
+}
+
+.comissionprice{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#commission-options select {
+    font-size: 13px;
+    padding:7px;
+    border: 2px solid #0F3247;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #3D3F66;    
 }
