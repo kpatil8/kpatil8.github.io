@@ -19,33 +19,33 @@
             <input type="text" id="display" disabled>
             <table class="calctable">
                 <tr>
-                    <td><input type="button" value="7" onclick="appendToDisplay('7')"></td>
-                    <td><input type="button" value="8" onclick="appendToDisplay('8')"></td>
-                    <td><input type="button" value="9" onclick="appendToDisplay('9')"></td>
-                    <td><input type="button" value="/" onclick="appendToDisplay('/')"></td>
+                    <td><input type="button" value="7" class="num" data-value="7"></td>
+                    <td><input type="button" value="8" class="num" data-value="8"></td>
+                    <td><input type="button" value="9" class="num" data-value="9"></td>
+                    <td><input type="button" value="/" class="operator" data-value="/"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="4" onclick="appendToDisplay('4')"></td>
-                    <td><input type="button" value="5" onclick="appendToDisplay('5')"></td>
-                    <td><input type="button" value="6" onclick="appendToDisplay('6')"></td>
-                    <td><input type="button" value="*" onclick="appendToDisplay('*')"></td>
+                    <td><input type="button" value="4" class="num" data-value="4"></td>
+                    <td><input type="button" value="5" class="num" data-value="5"></td>
+                    <td><input type="button" value="6" class="num" data-value="6"></td>
+                    <td><input type="button" value="*" class="operator" data-value="*"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="1" onclick="appendToDisplay('1')"></td>
-                    <td><input type="button" value="2" onclick="appendToDisplay('2')"></td>
-                    <td><input type="button" value="3" onclick="appendToDisplay('3')"></td>
-                    <td><input type="button" value="-" onclick="appendToDisplay('-')"></td>
+                    <td><input type="button" value="1" class="num" data-value="1"></td>
+                    <td><input type="button" value="2" class="num" data-value="2"></td>
+                    <td><input type="button" value="3" class="num" data-value="3"></td>
+                    <td><input type="button" value="-" class="operator" data-value="-"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="button" value="0" onclick="appendToDisplay('0')"></td>
-                    <td><input type="button" value="." onclick="appendToDisplay('.')"></td>
-                    <td><input type="button" value="+" onclick="appendToDisplay('+')"></td>
+                    <td colspan="2"><input type="button" value="0" class="num" data-value="0"></td>
+                    <td><input type="button" value="." class="num" data-value="."></td>
+                    <td><input type="button" value="+" class="operator" data-value="+"></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><input type="button" value="=" onclick="calc()"></td>
+                    <td colspan="4"><input type="button" value="=" id="equals"></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><input type="button" value="C" onclick="clearcalc()"></td>
+                    <td colspan="4"><input type="button" value="C" id="clear"></td>
                 </tr>
             </table>
         </div>
