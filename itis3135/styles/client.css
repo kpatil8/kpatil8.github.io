@@ -172,3 +172,23 @@ nav ul li {
     background-color: #FFFFFF;
     color: #3D3F66;    
 }
+
+#futureprojs .container .gallery {
+    display: block; /* Ensure each image container occupies a new line */
+}
+
+#futureprojs .container .gallery .image-border {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto 20px; 
+}
+
+#futureprojs .container .gallery .image-border img {
+    width: 100%; 
+    display: block; 
+    border-radius: 5px; 
+}
+
+.journalheader{
+    text-align: center;
+}
