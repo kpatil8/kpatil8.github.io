@@ -53,6 +53,7 @@ nav ul li {
     font-size: 20px;
 }
 
+
 .headerlogo {
     position: absolute;
     top: 20px;
@@ -230,4 +231,27 @@ nav ul li {
     padding:7px;
     background-color: #292943;
     border-radius: 40px;
+}
+
+footer a{
+    color: #A5A0B7;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#3D3F66;
+}
+
+footer img{
+    padding-left: 25px;
+    transition:transform 0.3s ease-in-out;  
+}
+
+footer img:hover{
+    transform: scale(1.05);
+}
+
+.certification a{
+    text-decoration: underline;
+    
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,47 @@
     <link rel="stylesheet" href="../styles/client.css">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
+
 <body>
     <header>
         <div data-include="../components/clientheader.html"></div>
-</header>
+    </header>
     <main>
         <h2>Gallery</h2>
 
-    <div class="container">
+        <div class="container">
 
-        <div class="gallery">
-            <div class="image-border"><img src="../images/galleryimg1.png" alt="Image 1" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg2.png" alt="Image 2" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg3.png" alt="Image 3" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg4.png" alt="Image 4" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg5.png" alt="Image 5" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg6.png" alt="Image 6" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg7.png" alt="Image 7" class="thumbnail"></div>
-            <div class="image-border"><img src="../images/galleryimg8.png" alt="Image 8" class="thumbnail"></div>
+            <div class="gallery">
+                <div class="image-border"><img src="../images/galleryimg1.png" alt="Image 1" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg2.png" alt="Image 2" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg3.png" alt="Image 3" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg4.png" alt="Image 4" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg5.png" alt="Image 5" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg6.png" alt="Image 6" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg7.png" alt="Image 7" class="thumbnail"></div>
+                <div class="image-border"><img src="../images/galleryimg8.png" alt="Image 8" class="thumbnail"></div>
+            </div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="../images/galleryimg1.png" alt="">
+            </div>
+
+
+
         </div>
-
-        <div class="popup-image">
-            <span>&times;</span>
-            <img src="../images/galleryimg1.png" alt="">
-        </div>
-
-        
-        
-    </div>
 
     </main>
     <footer>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px"
-            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img style="border:0;width:88px;height:31px;" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>
-            <a href="https://wave.webaim.org/report#/" id="validation_link_disability"> <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag-2.png" alt="Valid Disabiliy/Accessibility Design!">
-            </a>
+        <div data-include="../components/clientfooter.html"></div>
     </footer>
     <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_disability").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
     <script src="../scripts/HTMLInclude.min.js"></script>
     <script src="../scripts/clientscripts.js"></script>
 </body>
+
 </html>

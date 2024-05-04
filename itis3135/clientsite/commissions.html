@@ -41,27 +41,18 @@
         </div>
         <div id="product">
             <span id="price-placeholder" class="comissionprice">Price:</span>
-                <span id="price"></span>
+            <span id="price"></span>
         </div>
         <div id="example">
             <h3>Example:</h3>
             <img id="example-image" class="commisionex" src="" alt="Example Image">
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGZ8jbp9UWL4dOsa8wMi1w2YLIZQipq5OsBEZGrQnqDo8E1g/viewform?embedded=true" width="640" height="1280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfGZ8jbp9UWL4dOsa8wMi1w2YLIZQipq5OsBEZGrQnqDo8E1g/viewform?embedded=true"
+            width="640" height="1280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </main>
     <footer>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px"
-                src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px;" src="https://jigsaw.w3.org/css-validator/images/vcss"
-                alt="Valid CSS!">
-        </a>
-        <a href="https://wave.webaim.org/report#/" id="validation_link_disability"> <img
-                style="border:0;width:88px;height:31px" src="../images/button_validation_wcag-2.png"
-                alt="Valid Disabiliy/Accessibility Design!">
-        </a>
+        <div data-include="../components/clientfooter.html"></div>
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
