@@ -217,3 +217,17 @@ nav ul li {
 .socials:hover{
     transform: scale(1.05);
 }
+
+.intropic{
+    width:300px;
+    display: block;
+    margin:0 auto;
+    border-radius: 20px;
+
+}
+
+.image-border-static{
+    padding:7px;
+    background-color: #292943;
+    border-radius: 40px;
+}
