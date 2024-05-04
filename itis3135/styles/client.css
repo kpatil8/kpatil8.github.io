@@ -192,3 +192,27 @@ nav ul li {
 .journalheader{
     text-align: center;
 }
+
+.contact-info, .social-media {
+    margin-bottom: 30px;
+}
+
+.social-media ul {
+    padding: 0;
+    text-align: center;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+    padding:20px;
+}
+
+.socials{
+    width:100px;
+    transition:transform 0.3s ease-in-out;
+}
+
+.socials:hover{
+    transform: scale(1.05);
+}
